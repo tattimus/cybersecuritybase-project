@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<h1>All event participants</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th><th>Name</th><th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="stu : ${stuff}">
+            <td th:utext="${stu.id}">id</td>
+            <td th:utext="${stu.name}">name</td>
+            <td th:utext="${stu.address}">address</td>
+        </tr>
+    </tbody>
+</table>

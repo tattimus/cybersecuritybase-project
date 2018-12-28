@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <h1>Admin hangout</h1>
+</head>
+<body>
+    <p><a href="/adminStuff/eventList">Link to all participants list</a></p>
+    <h1>Add admin user</h1>
+    <form action="#" th:action="@{/addAdmin}" method="POST">
+        <p><label for="username">username</label>: <input type="text" name="username" id="username"/></p>
+        <p><label for="password">password</label>: <input type="text" name="password" id="password"/></p>
+        <p><input type="submit" value="Submit" /></p>
+    </form>
+</body>
+</html>

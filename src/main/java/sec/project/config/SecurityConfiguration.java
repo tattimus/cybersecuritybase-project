@@ -23,6 +23,16 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         // no real security at the moment
         http.authorizeRequests()
                 .anyRequest().permitAll();
+        //http.headers()
+          //      .xssProtection().block(false);
+        //http.headers()
+          //      .httpStrictTransportSecurity()
+          //      .includeSubDomains(true)
+          //      .maxAgeInSeconds(31536000);
+        //http.headers()
+          //      .frameOptions()
+	  //  	  .sameOrigin();
+
     }
 
     @Autowired

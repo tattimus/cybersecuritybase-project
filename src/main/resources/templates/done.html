@@ -8,4 +8,17 @@
         <h1>Thank you! You have been signed up to the event!</h1>
 
     </body>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th><th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="sup : ${signup}">
+                <td th:utext="${sup.name}">name</td>
+                <td th:utext="${sup.address}">address</td>
+            </tr>
+        </tbody>
+    </table>
 </html>

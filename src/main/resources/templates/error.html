@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <h2>Something happened!</h2>
+</head>
+<body>
+    <h3>Memo for developers during development:</h3>
+    <ul>
+        <li>/form, GET, event signup and admin login</li>
+        <li>/form, POST, takes to signup done page /done</li>
+        <li>/done, GET, contains signup info and thank you text</li>
+        <li>/adminStuff, POST, requires username and password(default admin, admin) and takes to admin hangout</li>
+        <li>/adminStuff/eventList, GET, takes to page which contains all event participants name,address and id</li>
+        <li>/addAdmin, POST, requires username and password and redirects to /form</li>
+        <li>/error, GET, remember to change to proper error page after developement</li>
+    </ul>
+    <h2>Remember to fix!</h2>
+    <ul>
+        <li>Proper admin implementation, current session version isn't really sustainable</li>
+        <li>Update the spring boot version used, current has some vulnerabilities</li>
+        <li>Xss attack aren't dealt with</li>
+        <li>No brute force credentials block</li>
+        <li>URL manipulation makes it possible to get to admin pages</li>
+        <li>Do something to security config, man in the middle and iframe attacks possible</li>
+    </ul>
+</body>
+</html>
